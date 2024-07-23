@@ -50,7 +50,7 @@ r = z.get_results()
 #Convert to a pandas data table with the desired columns from the GAIA output
 new_gaia = pd.DataFrame({'SOURCE_ID':r['SOURCE_ID'], 'RA (J2016.0)':r['ra'], 'DEC (J2016.0)': r['dec'], 'Parallax': r['parallax'], 'Parallax err': r['parallax_error'], 'RA proper motion': r['pmra'], 'RA proper motion err': r['pmra_error'], 'DEC proper motion': r['pmdec'], 'DEC proper motion err': r['pmdec_error'], 'Radial Velocity': r['radial_velocity']})
 
-#Input the GAIA DR3 Source ID into the SIMBAD Query to get object names ('MAIN_ID')
+#Input the GAIA DR3 Source ID into the SIMBAD Query to get corresponding object names ('MAIN_ID')
 i = 0
 b = []
 c = []
